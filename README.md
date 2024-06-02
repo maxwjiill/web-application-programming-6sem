@@ -1,1 +1,1 @@
-https://maxwjiill.github.io/Layout-and-prototyping-of-websites/
+https://maxwjiill.github.io/web-application-programming-6sem/
