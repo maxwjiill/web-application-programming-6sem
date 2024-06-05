@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ кондитерского изделия</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="order.php" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="address">Адрес:</label>
+        <input type="text" id="address" name="address" required><br>
+
+        <label for="phone">Телефон:</label>
+        <input type="text" id="phone" name="phone" required><br>
+
+        <label for="date">Дата:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="product_type">Вид изделия:</label>
+        <select id="product_type" name="product_type">
+            <option value="cake">Торт</option>
+            <option value="pastry">Пирожные</option>
+        </select><br>
+
+        <label for="dough_type">Тип теста:</label>
+        <select id="dough_type" name="dough_type">
+            <option value="biscuit">Бисквит</option>
+            <option value="meringue">Безе</option>
+            <option value="shortcrust">Песочное</option>
+        </select><br>
+
+        <label for="delivery_time">Время доставки:</label>
+        <select id="delivery_time" name="delivery_time">
+            <option value="10:00-15:00">10:00 - 15:00</option>
+            <option value="15:00-19:00">15:00 - 19:00</option>
+            <option value="19:00-23:00">19:00 - 23:00</option>
+        </select><br>
+
+        <label>Дополнительные услуги:</label><br>
+        <input type="checkbox" id="marzipan_figures" name="additional_services[]" value="marzipan_figures">
+        <label for="marzipan_figures">Фигурки из марципана</label><br>
+        <input type="checkbox" id="glaze" name="additional_services[]" value="glaze">
+        <label for="glaze">Глазурь</label><br>
+
+        <input type="submit" value="Оформить заказ">
+    </form>
+</body>
+</html>

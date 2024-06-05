@@ -1,0 +1,6 @@
+cake:200
+pastry:150
+biscuit:30
+meringue:40
+shortcrust:50
+cream:50
